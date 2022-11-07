@@ -1,7 +1,8 @@
-FROM node:10
+FROM node:18-slim
 
-RUN mkdir /src
-WORKDIR /src
+
+RUN mkdir -p /data/src
+WORKDIR /data/src
 
 EXPOSE 8005
 CMD ["scripts/dev"]
