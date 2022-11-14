@@ -31,13 +31,15 @@ export default {
           sort:  `nameDisplay`,
           width: 270
         },
-        this.includeConstraint ? {
-          name:  'Constraint',
-          label: 'Constraint',
-          value: 'constraint.metadata.name',
-          sort:  `constraint.metadata.name`,
-          width: 200
-        } : null,
+        this.includeConstraint
+          ? {
+            name:  'Constraint',
+            label: 'Constraint',
+            value: 'constraint.metadata.name',
+            sort:  `constraint.metadata.name`,
+            width: 200
+          }
+          : null,
         {
           name:  'Message',
           label: 'Message',
